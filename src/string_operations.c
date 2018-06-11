@@ -1,4 +1,18 @@
 #include <stdio.h>
+#include <wchar.h>
+
+size_t w_strlen(cons wchar_t *s)
+
+{
+
+    const wchar_t *p = s;
+
+
+    while(p)
+    ++p;
+    return (p - s);
+    
+}
 char *my_strcat(char *t, char *s)
 
 {
@@ -13,7 +27,7 @@ char *my_strcat(char *t, char *s)
     while (*p++=*s++)
     ;
     return t;
-    
+
 }
 
 size_t my_strlen(const char *s)
