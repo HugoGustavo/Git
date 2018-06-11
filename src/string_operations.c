@@ -1,4 +1,23 @@
 #include <stdio.h>
+#include <wchar.h>
+wchar_t *my_strchr(wchar_t *ws, wchar_t wc)
+
+{
+
+    while(*ws)
+    {
+
+        if ( *ws == wc )
+
+        return ws;
+
+        ++ws;
+
+    }
+    return NULL;
+    
+}
+
 char *my_strcat(char *t, char *s)
 
 {
