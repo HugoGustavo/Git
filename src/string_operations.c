@@ -30,7 +30,7 @@ char *my_strcat(char *t, char *s)
 
 }
 
-size_t my_strlen(const char *s)
+size_t my_wc_strlen(const char *s)
 {
    char *p = s;
 
